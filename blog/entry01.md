@@ -53,6 +53,7 @@ i am currently in the first three steps of the *EDP*, those being
     * I need to keep in mind that this will be used by other people, so I should I try to keep it as simple and intuitive as possible for people to use
 * How to read:
     * theres a lot of content in the documentation for howler.js, so going forward I have to take a surgical approach to it so I can learn it as efficently as possible, in regards to my project.
+    
 [Next](entry02.md)
 
 [Home](../README.md)
