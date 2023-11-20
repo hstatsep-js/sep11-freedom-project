@@ -8,6 +8,7 @@
 * https://dyclassroom.com/reference-javascript/work-with-audio-in-javascript-using-howler-js
 * https://unpkg.com/browse/howler@1.1.22/README.md
 * https://www.crowdbotics.com/blog/build-your-own-radio-streaming-app-with-howler-js
+* https://goldfirestudios.com/howler-js-modern-web-audio-javascript-library
 ## EDP {Engineering design process}
 * I am in the brainstorming part of the process
 
