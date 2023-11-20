@@ -12,6 +12,8 @@
 ## EDP {Engineering design process}
 * I am still in the brainstorming part of the process
 
+## Issues:
+* live server extension and http-server isn't working, I cannot tinker further[]
 [Previous](entry01.md) | [Next](entry03.md)
 
 [Home](../README.md)
