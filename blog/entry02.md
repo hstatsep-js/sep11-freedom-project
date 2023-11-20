@@ -10,7 +10,7 @@
 * https://www.crowdbotics.com/blog/build-your-own-radio-streaming-app-with-howler-js
 * https://goldfirestudios.com/howler-js-modern-web-audio-javascript-library
 ## EDP {Engineering design process}
-* I am in the brainstorming part of the process
+* I am still in the brainstorming part of the process
 
 [Previous](entry01.md) | [Next](entry03.md)
 
