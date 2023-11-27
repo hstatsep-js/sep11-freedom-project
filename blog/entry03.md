@@ -14,7 +14,9 @@
 
 ## Issues:
 * live server extension and http-server isn't working, I cannot tinker further[]
-Text
+## new discoveries
+* live server don't work on google chrome, but it does work on fire fox
+* howler.js seems to work 
 
 [Previous](entry02.md) | [Next](entry04.md)
 
