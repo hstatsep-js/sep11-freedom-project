@@ -11,8 +11,8 @@ Project: **interactive beat kit**
 * [adding Howler.js](https://youtu.be/sVtCUoZtKH8?si=whRrDfxE2YyTWDvO)
 * I have created a howler-test.html file, although I am confused as to how to get specific sounds. I may need to download it to know.
 * next week, i will set up a simple button, that makes noise when clicked.
-X/X/X:
-* Text
+12/04/2023:
+I am building another button that makes another horse noise when clicked, it's saying it isn't defined right now though, don't know the issue
 
 
 <!--

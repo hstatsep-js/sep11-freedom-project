@@ -18,26 +18,42 @@
         <h1> hello this is a test </h1>
         <p> yooo</p>
 <button id="myBTN" type ="button"> click for suprise!</button>
+<button id="myBTN2" type ="button"> WoOf!</button>
+
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://unpkg.com/howler@2.2.3/dist/howler.min.js"></script>
 
         <script>
-        var myBTn = document.getElementbyId("myBTN");
-btton.addEventListener('click', function() {
-sound.play();
-})
+
 
           // Create a new Howl instance
           var sound = new Howl({
             src: ['sounds/horse.mp3']
           });
 
-          // Play the sound
-          sound.play();
 
+// Get the button element by its id
+    var button = document.getElementById('myBTN');
 
+    // Add a click event listener to the button
+    button.addEventListener('click', function() {
+        // Play the sound when the button is clicked
+        sound.play();
+    });
+
+// new howl instance for woof noise
+
+        var sound = new howl({
+            src: ['sounds/horse-noise2.mp3']
+        });
+
+        var button2 = document.getElementById('myBTN2')
+
+        button.addEventListener('click', function(){
+            sound.play();
+        });
         </script>
     </body>
 </html>
