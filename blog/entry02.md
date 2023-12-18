@@ -49,7 +49,10 @@ I then declare a varaiable titled button, which will equal the button
 
 I add a click event listener to the varaiable, which will play the sound when clicked
 ## Skills:
-
+* Problem decomposition:
+    I realized that howler wasn't working, and the tutorials wern't helping either, so I went forward with the idea that howler doesn't provide sounds, and got my own sounds. In the end I realized howler is like SASS, just making things easier.
+* How to Google:
+    I had to learn how to make HTML connect to JS, which will relate to our next unit JS DOM!
 ## FP Goal for Winter break!!:
 
 I plan to work with my brother on learning howler.js and going over JS syntax, I think what I makes coding diffcult for me, is the syntax, so going over it for an extended period of time will not only be useful for the future, but it will give me something to do.
