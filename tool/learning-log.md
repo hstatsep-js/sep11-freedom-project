@@ -14,6 +14,10 @@ Project: **interactive beat kit**
 12/04/2023:
 I am building another button that makes another horse noise when clicked, it's saying it isn't defined right now though, don't know the issue
 
+1/4/2024
+
+the buttons work, but they play the same sound, I don't know why.
+
 
 <!--
 * Links you used today (websites, videos, etc)
