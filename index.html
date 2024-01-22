@@ -12,6 +12,17 @@
                 color: gold;
                 background-color: beige;
             }
+
+            #myBTN {
+                text-align: center;
+                color: red;
+            }
+
+            #myBTN2 {
+                text-align: center;
+                color: blue;
+            }
+
         </style>
 
         <title>Title</title>
@@ -20,7 +31,7 @@
         <!-- HTML -->
         <h1> hello this is a HOWLER test </h1>
         <p> 4567</p>
-        
+
 <button id="myBTN" type ="button"> click for suprise!</button>
 <button id="myBTN2" type ="button"> click for dog toy noise!</button>
 
@@ -30,10 +41,10 @@
         <script src="https://unpkg.com/howler@2.2.3/dist/howler.min.js"></script>
 
         <script>
-
+// console.log("console is here")
 
           // Create a new Howl instance
-          var sound = new Howl({
+          var sound1 = new Howl({
             src: ['sounds/horse.mp3']
           });
 
@@ -44,20 +55,24 @@
     // Add a click event listener to the button
     button.addEventListener('click', function() {
         // Play the sound when the button is clicked
-        sound.play();
+        sound1.play();
     });
 
 //new howl instance for dog-toy noise
 
-        var sound = new Howl({
+        var sound2 = new Howl({
             src: ['./sounds/dog-toy.mp3']
         });
 
-        var button2 = document.getElementById('myBTN2');
+        var button = document.getElementById('myBTN2');
 
         button.addEventListener('click', function(){
-            sound.play();
+            sound2.play();
         });
+
+
+
+
         </script>
     </body>
 </html>

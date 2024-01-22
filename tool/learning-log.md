@@ -18,6 +18,9 @@ I am building another button that makes another horse noise when clicked, it's s
 
 the buttons work, but they play the same sound, I don't know why.
 
+1/21/2024
+
+* you have to rename sound, I thought it was always just sound for all Howler instances, but it isn't
 
 <!--
 * Links you used today (websites, videos, etc)
