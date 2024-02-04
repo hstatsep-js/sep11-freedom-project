@@ -23,6 +23,12 @@
                 color: blue;
             }
 
+
+            #myBTN3 {
+                text-align: center;
+                color: green;
+
+            }
         </style>
 
         <title>Title</title>
@@ -32,8 +38,9 @@
         <h1> hello this is a HOWLER test </h1>
         <p> 4567</p>
 
-<button id="myBTN" type ="button"> click for suprise!</button>
+<button id="myBTN" type ="button"> click for HORSE!</button>
 <button id="myBTN2" type ="button"> click for dog toy noise!</button>
+<button id="myBTN3" type ="button"> click for BOOM!</button>
 
 
 
@@ -71,6 +78,16 @@
         });
 
 
+
+var sound3 = new Howl({
+    src: ['sounds/arcade-expolision.wav']
+});
+
+var button = document.getElementById('myBTN3');
+
+button.addEventListener('click', function(){
+    sound3.play();
+});
 
 
         </script>

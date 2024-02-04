@@ -21,7 +21,7 @@ the buttons work, but they play the same sound, I don't know why.
 1/21/2024
 
 * you have to rename sound, I thought it was always just sound for all Howler instances, but it isn't
-
+* both buttons finnally work!
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
