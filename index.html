@@ -13,22 +13,34 @@
                 background-color: beige;
             }
 
+            
             #myBTN {
                 text-align: center;
                 color: red;
+                width: 100px;
             }
 
             #myBTN2 {
                 text-align: center;
                 color: blue;
+                width: 100px;
             }
 
 
             #myBTN3 {
                 text-align: center;
                 color: green;
+                width: 100px;
 
             }
+
+            .center {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100px;
+            }
+
         </style>
 
         <title>Title</title>
@@ -37,10 +49,31 @@
         <!-- HTML -->
         <h1> hello this is a HOWLER test </h1>
         <p> 4567</p>
+<div class="center">
+    <button id="myBTN" type ="button"> click for HORSE!</button>
+</div>
 
-<button id="myBTN" type ="button"> click for HORSE!</button>
+<div  class="center">
+    <button id="myBTN2" type ="button"> click for dog toy noise!</button>
+</div>
+
+<div class="center">
+    <button id="myBTN3" type ="button"> click for BOOM!</button>
+</div>
+
+<div>
+    <button id="myBTN4" type="button"> CL1cK!?!</button>
+</div>
+
+<button class="soundButton" data-sound="sounds/arcade-expolision.wav">Button 1</button>
+<button class="soundButton" data-sound="sounds/arcade-expolision.wav">Button 2</button>
+<button class="soundButton" data-sound="sounds/arcade-expolision.wav">Button 3</button>
+<button class="soundButton" data-sound="sounds/arcade-expolision.wav">Button 4</button>
+<button class="soundButton" data-sound="sounds/arcade-expolision.wav">Button 5</button>
+
+<!-- <button id="myBTN" type ="button"> click for HORSE!</button>
 <button id="myBTN2" type ="button"> click for dog toy noise!</button>
-<button id="myBTN3" type ="button"> click for BOOM!</button>
+<button id="myBTN3" type ="button"> click for BOOM!</button> -->
 
 
 
@@ -88,6 +121,34 @@ var button = document.getElementById('myBTN3');
 button.addEventListener('click', function(){
     sound3.play();
 });
+
+
+
+
+// Get all elements with the class "soundButton"
+    var soundButtons = document.querySelectorAll('.soundButton');
+
+    // Create an array to store Howl sound instances
+    var sounds = [];
+
+    // Loop through each button and create a Howl instance for each sound
+    soundButtons.forEach(function(button) {
+        var soundPath = button.getAttribute('data-sound');
+        var sound = new Howl({
+            src: [soundPath]
+        });
+
+        // Store the sound instance in the array
+        sounds.push(sound);
+
+        // Add a click event listener to each button
+        button.addEventListener('click', function() {
+            // Play the corresponding sound when the button is clicked
+            sound.play();
+        });
+    });
+
+
 
 
         </script>

@@ -22,6 +22,24 @@ the buttons work, but they play the same sound, I don't know why.
 
 * you have to rename sound, I thought it was always just sound for all Howler instances, but it isn't
 * both buttons finnally work!
+
+2/3/24
+
+*   I know how to confidentally create buttons that will play noise every time it's clicked
+* in order to create muliple buttons, quickly, I have to create an array, and push my sounds into that array, which I have tinkered with in index.html
+
+```js
+
+// Create an array to store Howl sound instances
+    var sounds = [];
+
+     // Store the sound instance in the array
+        sounds.push(sound);
+
+```
+
+
+* to stop a button, you have to create another button to end it, or make it so that is clicked once again, the sound will stop.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
