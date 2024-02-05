@@ -17,7 +17,10 @@
 ## discoveries!
 * in order to create multiple buttons that play sound when clicked, you have to create new **Keyword** names for each
 
-![my image](screenshots./sound1.png)
+![my image](screenshots/sound1.png)
+
+![my image](screenshots/sound2.png)
+
 
 [Previous](entry02.md) | [Next](entry04.md)
 
