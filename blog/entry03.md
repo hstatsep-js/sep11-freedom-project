@@ -14,9 +14,8 @@
 
 ## Issues:
 * live server extension and http-server isn't working, I cannot tinker further[]
-## new discoveries
-* live server don't work on google chrome, but it does work on fire fox
-* howler.js seems to work 
+## discoveries!
+* in order to create multiple buttons that play sound when clicked, you have to create new **Keyword** names for each 
 
 [Previous](entry02.md) | [Next](entry04.md)
 
