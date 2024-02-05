@@ -16,11 +16,19 @@
 * live server extension and http-server isn't working, I cannot tinker further[]
 ## discoveries!
 * in order to create multiple buttons that play sound when clicked, you have to create new **Keyword** names for each
-
+* usage of arrays is needed to facilitate te usage of multiple sounds, as having individual buttons for my project is time consuming, and harder to manipulate
+* 
 ![my image](screenshots/sound1.png)
 
 ![my image](screenshots/sound2.png)
 
+
+
+
+
+## Fp Goal for Mid-Winter Break:
+
+set up the html/css for my freedom project, all of the fonts, colors, backgrounds, buttons/divs, so that when I come back, I am able to just work on the howler.js aspect of the website, to create my freedom project, which will be a interactive beat kit.
 
 [Previous](entry02.md) | [Next](entry04.md)
 
