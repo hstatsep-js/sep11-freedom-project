@@ -15,7 +15,8 @@
 ## Issues:
 * live server extension and http-server isn't working, I cannot tinker further[]
 ## discoveries!
-* in order to create multiple buttons that play sound when clicked, you have to create new **Keyword** names for each 
+* in order to create multiple buttons that play sound when clicked, you have to create new **Keyword** names for each
+![my image](screenshots./sound1.png)
 
 [Previous](entry02.md) | [Next](entry04.md)
 
