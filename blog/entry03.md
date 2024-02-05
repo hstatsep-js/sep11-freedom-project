@@ -33,6 +33,10 @@
 
 set up the html/css for my freedom project, all of the fonts, colors, backgrounds, buttons/divs, so that when I come back, I am able to just work on the howler.js aspect of the website, to create my freedom project, which will be a interactive beat kit.
 
+
+* brush up on front-end stylization(HTML/CSS)
+
+
 [Previous](entry02.md) | [Next](entry04.md)
 
 [Home](../README.md)
