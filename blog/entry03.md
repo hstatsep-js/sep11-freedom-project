@@ -17,7 +17,10 @@
 ## discoveries!
 * in order to create multiple buttons that play sound when clicked, you have to create new **Keyword** names for each
 * usage of arrays is needed to facilitate te usage of multiple sounds, as having individual buttons for my project is time consuming, and harder to manipulate
-* 
+
+
+
+
 ![my image](screenshots/sound1.png)
 
 ![my image](screenshots/sound2.png)
