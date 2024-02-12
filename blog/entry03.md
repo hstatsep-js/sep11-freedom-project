@@ -42,7 +42,7 @@ set up the html/css for my freedom project, all of the fonts, colors, background
 
 
 * brush up on front-end stylization(HTML/CSS)
-
+* work on my JS DOM skills
 
 [Previous](entry02.md) | [Next](entry04.md)
 
