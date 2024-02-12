@@ -20,13 +20,20 @@
 
 
 
-
+## Tinkering:
 ![my image](screenshots/sound1.png)
 
 ![my image](screenshots/sound2.png)
 
 
 
+
+## SKILLS:
+* Organization:
+    I created new folders that contained HTML, CSS, JS for different concepts I wanted to test
+    I created folders that stored my sounds/noises
+* How To Learn:
+    I started to look more closely at the howler.js videos, writing out the code they wrote to see what it did, manipulating it, and making new things with it.
 
 
 ## Fp Goal for Mid-Winter Break:
