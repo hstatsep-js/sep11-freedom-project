@@ -4,5 +4,22 @@
 }
 
 body{
-    background: beige;
+    background: black;
+}
+
+.kit{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+height: 100vh;
+}
+
+.pad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex: 1 0 calc(33.333% - 20px);
+    background: radial-gradient(red, blue);
+    border-radius: 10px;
 }
