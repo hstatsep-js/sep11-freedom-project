@@ -7,6 +7,7 @@
 
 var sound1 = new Howl({
   src: ["sounds/snare-drum.mp3"]
+  
 });
 
     var containerOne = document.getElementById("div1");
@@ -14,3 +15,25 @@ var sound1 = new Howl({
     containerOne.addEventListener("click",function(e){
         sound1.play();
     })
+
+var sound2 = new Howl({
+  src: ["sounds/arcade-retro.wav"]
+});
+
+var containertwo = document.getElementById("div2");
+
+  containertwo.addEventListener("click",function(event){
+    sound2.play();
+  });
+
+
+
+  var sound3 = new Howl({
+    src: ["sounds/blow.wav"]
+  });
+
+  var containerthree = document.getElementById("div3");
+
+  containerthree.addEventListener("click",function(event){
+    sound3.play();
+  });
