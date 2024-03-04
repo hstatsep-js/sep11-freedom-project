@@ -49,6 +49,29 @@ the buttons work, but they play the same sound, I don't know why.
 
 
 * to stop a button, you have to create another button to end it, or make it so that is clicked once again, the sound will stop.
+
+2/27/24
+
+* I have set up all of the HTML and CSS for my Freedom Project
+* the DOM Lessons have been very useful in creating clickable 'divs' that play sound
+
+
+
+
+```js
+var sound2 = new Howl({
+  src: ["sounds/arcade-retro.wav"]
+});
+
+var containertwo = document.getElementById("div2");
+
+  containertwo.addEventListener("click",function(event){
+    sound2.play();
+  });
+```
+I am still trying to find better audio files, because the ones I have right now are pretty boring
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
