@@ -25,7 +25,7 @@ the buttons work, but they play the same sound, I don't know why.
 
 2/3/24
 
-*   I know how to confidentally create buttons that will play noise every time it's clicked
+*   I know how to confidentially create buttons that will play noise every time it's clicked
 * in order to create muliple buttons, quickly, I have to create an array, and push my sounds into that array, which I have tinkered with in index.html
 
 ```js
@@ -37,6 +37,15 @@ the buttons work, but they play the same sound, I don't know why.
         sounds.push(sound);
 
 ```
+
+* to stop a button, you have to create another button to end it, or make it so that is clicked once again, the sound will stop.
+
+
+
+3/1/24
+    Since I know how objects work, I think I refactor my code to be more managable, will try this on monday
+
+    I have created all divs
 
 
 * to stop a button, you have to create another button to end it, or make it so that is clicked once again, the sound will stop.
