@@ -42,13 +42,7 @@ the buttons work, but they play the same sound, I don't know why.
 
 
 
-3/1/24
-    Since I know how objects work, I think I refactor my code to be more managable, will try this on monday
 
-    I have created all divs
-
-
-* to stop a button, you have to create another button to end it, or make it so that is clicked once again, the sound will stop.
 
 2/27/24
 
@@ -70,6 +64,12 @@ var containertwo = document.getElementById("div2");
   });
 ```
 I am still trying to find better audio files, because the ones I have right now are pretty boring
+
+3/1/2024
+
+Since I have learned how to use 
+
+
 
 
 <!--
