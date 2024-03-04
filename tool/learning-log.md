@@ -67,7 +67,7 @@ I am still trying to find better audio files, because the ones I have right now 
 
 3/1/2024
 
-Since I have learned how to use 
+Since I have learned how to use objects, I think on Monday (3-4-24), I will try to refactor the code for my buttons to make it more managable
 
 
 
