@@ -18,7 +18,7 @@
                 background-color: beige;
             }
 
-            
+
             #myBTN {
                 text-align: center;
                 color: red;
@@ -36,7 +36,7 @@
                 text-align: center;
                 color: green;
                 width: 100px;
-
+                border-radius: 50px;
             }
 
             .center {
@@ -46,6 +46,10 @@
                 height: 100px;
             }
 
+
+            .black{
+                background-color: black;
+            }
         </style>
 
         <title>Title</title>
@@ -132,7 +136,15 @@ button.addEventListener('click', function(){
     sound3.play();
 });
 
+    var sound4 = new Howl({
+        src:["sounds"]
+    });
 
+    var wam = document.querySelector("body");
+
+    wam.addEventListener("click",function(e){
+        sound4.play();
+    });
 
 
 // Get all elements with the class "soundButton"
@@ -159,6 +171,12 @@ button.addEventListener('click', function(){
     });
 
 
+        var body = document.querySelector("body");
+
+            document.addEventListener("click", function(event){
+                body.classList.toggle("black");
+                sound2.play();
+            });
 
 
         </script>
