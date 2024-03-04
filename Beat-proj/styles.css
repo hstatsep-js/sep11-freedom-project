@@ -20,6 +20,6 @@ height: 100vh;
     align-items: center;
     margin: 10px;
     flex: 1 0 calc(33.333% - 20px);
-    background: conic-gradient(black, orange, blue, pink, purple);
+    background: conic-gradient(#D9D3A9, #80799C, #B3AADA, #847F5A, #2F255E);
     border-radius :10px;
 }
