@@ -69,8 +69,13 @@ I am still trying to find better audio files, because the ones I have right now 
 
 Since I have learned how to use objects, I think on Monday (3-4-24), I will try to refactor the code for my buttons to make it more managable
 
+3/4/2024
 
+* [soundsCrate](https://soundscrate.com/instruments.html)
 
+this website looks like it has a lot of sound effects, exactly what I need, I'll listen to them at home and see what sounds good.
+
+changed CSS colors for div
 
 <!--
 * Links you used today (websites, videos, etc)

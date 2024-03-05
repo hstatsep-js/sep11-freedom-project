@@ -4,10 +4,13 @@
 // });
 
 // new howl instance
+const myObj
+
+
 
 var sound1 = new Howl({
   src: ["sounds/snare-drum.mp3"]
-  
+
 });
 
     var containerOne = document.getElementById("div1");
@@ -38,7 +41,7 @@ var containertwo = document.getElementById("div2");
     sound3.play();
   });
 
-  
+
 
 
   var sound4 = new Howl({
