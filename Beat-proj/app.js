@@ -4,7 +4,7 @@
 // });
 
 // new howl instance
-const myObj
+
 
 
 
@@ -45,11 +45,33 @@ var containertwo = document.getElementById("div2");
 
 
   var sound4 = new Howl({
-    src: ["sounds/blow.wav"],
+    src: ["sounds/latino-loop.mp3"],
   });
 
   var containerfour = document.getElementById("div4");
 
   containerfour.addEventListener("click", function (event) {
     sound4.play();
+    sound4.volume(0.2); 
+  });
+
+
+
+  var sound5 = new Howl({
+    src: ["sounds/amen-break.mp3"],
+  });
+
+  var containerfive = document.getElementById("div5");
+
+  let isPlaying = false;
+
+  containerfive.addEventListener("click", function (event) {
+   if (isPlaying) {
+     // If playing, stop the sound
+     sound5.stop(); 
+    } else {
+     // If not playing, play the sound
+     sound5.play();
+     
+   }
   });
