@@ -77,6 +77,11 @@ this website looks like it has a lot of sound effects, exactly what I need, I'll
 
 changed CSS colors for div
 
+
+3/9/24
+
+* I have now changed the volume of the sounds, as they were too loud
+* I have figured I can make the sounds loop, which I have tested with the fifth sound ' amen break '.
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
