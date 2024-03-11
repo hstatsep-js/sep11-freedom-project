@@ -82,6 +82,11 @@ changed CSS colors for div
 
 * I have now changed the volume of the sounds, as they were too loud
 * I have figured I can make the sounds loop, which I have tested with the fifth sound ' amen break '.
+
+
+ 3/10/24
+* added sound for fifth div 
+* pretty much done with MVP, I do want the color to change when clicked must do on monday!
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
