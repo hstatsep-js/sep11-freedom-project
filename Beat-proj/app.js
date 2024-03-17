@@ -63,17 +63,11 @@ var containertwo = document.getElementById("div2");
 
   var containerfive = document.getElementById("div5");
 
-  var isPlaying = false;
+  
 
   containerfive.addEventListener("click", function (event) {
-   if (isPlaying = false) {
      // If playing, stop the sound
-     sound5.play(); 
-    } else {
-     // If not playing, play the sound
-     sound5.stop();
-     
-   }
+     sound5.play();  
   });
 
 
