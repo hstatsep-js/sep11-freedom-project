@@ -1,5 +1,5 @@
 # Entry 4
-##### 12/03/2023
+##### 3/17/2024
 
 ## content:
 * I am cotinuing my research with howler.js
@@ -9,45 +9,40 @@
 * https://unpkg.com/browse/howler@1.1.22/README.md
 * https://www.crowdbotics.com/blog/build-your-own-radio-streaming-app-with-howler-js
 * https://goldfirestudios.com/howler-js-modern-web-audio-javascript-library
+* https://moviemaker.minitool.com/moviemaker/free-sound-effects.html
+* https://www.freesoundeffects.com/free-sounds/drum-loops-10031/
 ## EDP {Engineering design process}
 * I am still in the brainstorming part of the process
 
-## Discoveries!!
 
-* you need to find your own audio files in order for howler to play any noise.
-    * I was under the impression that they provided audio files for you, but instead it acts like SASS, just making things easier.
-* in SASS'S case, it made CSS easier to repeat, and Howler does the same thing
-
-## Tinkering
-
-```js
-// button that makes a noise
-<button id="myBTN" type ="button"> click for suprise!</button>
-
-// Create a new Howl instance
-          var sound = new Howl({
-            src: ['sounds/horse.mp3']
-          });
+## Issues:
+* Still need to figure out how to make divs able to stop the sound when clicked, and then when clicked afterwards, the sound will start up again
+* these free mp3 files websites don't really have the best sounds
+## progress on MVP!
+* I have completed the mvp, I have the sounds needed, all of the Divs are clickable, and i have added CSS styling.
+## What I Want to do:
+* make divs change color when clicked (simple)
+* find images for divs (simple)
 
 
-// Get the button element by its id
-    var button = document.getElementById('myBTN');
-
-    // Add a click event listener to the button
-    button.addEventListener('click', function() {
-        // Play the sound when the button is clicked
-        sound.play();
-    });
-```
+## Tinkering:
+![my image](screenshots/Howeler1.png)
 
 
-I make a button, then I search the web for a horse audio file, and store it into a audio folder
 
-I declare a new howl instance
 
-I then declare a varaiable titled button, which will equal the button
 
-I add a click event listener to the varaiable, which will play the sound when clicked
+
+## SKILLS:
+* Debugging:
+   I had to figure out how to fix the gliches and user errors that I was getting due to not writing syntax correctly, or having to restart my IDE because It wasn't working for some reason.
+* How To Google:
+    I had to look for sound sources, and it's actually quite difiiclut because most of them aren't free or are on suspcious websites.
+
+
+
+
+
 
 [Previous](entry03.md) | [Next](entry05.md)
 
