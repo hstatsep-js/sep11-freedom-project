@@ -45,7 +45,7 @@ var containertwo = document.getElementById("div2");
 
 
   var sound4 = new Howl({
-    src: ["sounds/latino-loop.mp3"],
+    src: ["sounds/Basic_Rock_Crash_135.mp3"],
   });
 
   var containerfour = document.getElementById("div4");
@@ -63,15 +63,33 @@ var containertwo = document.getElementById("div2");
 
   var containerfive = document.getElementById("div5");
 
-  let isPlaying = false;
+  var isPlaying = false;
 
   containerfive.addEventListener("click", function (event) {
-   if (isPlaying) {
+   if (isPlaying = false) {
      // If playing, stop the sound
-     sound5.stop(); 
+     sound5.play(); 
     } else {
      // If not playing, play the sound
-     sound5.play();
+     sound5.stop();
      
    }
   });
+
+
+  var sound6 = new Howl({
+    src:["sounds/Cymbal_Groove.mp3"],
+    loop: true,
+
+  });
+
+  var containerSix = document.getElementById("div6");
+
+  containerSix.addEventListener("click", function (event){
+    sound6.play();
+    sound6.volume(0.2);
+
+  });
+
+
+
