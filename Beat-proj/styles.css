@@ -25,5 +25,5 @@ height: 100vh;
 }
 
 .blue {
-    background: ;
+    background: linear-gradient(red, blue, green, yellow, pink, orange, purple);
 }
