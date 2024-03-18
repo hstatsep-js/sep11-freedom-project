@@ -85,15 +85,21 @@ changed CSS colors for div
 
 
  3/10/24
-* added sound for fifth div 
+* added sound for fifth div
 * pretty much done with MVP, I do want the color to change when clicked must do on monday!
 
 
 3/17/24
 
-* added sound to div 6, 
+* added sound to div 6,
 * fixed broken sound for div 5
 * added images to all divs
+
+3/18/24
+* removed images from 5 & 6
+* div #1 changes color when clicked, works alongside sound function
+* will do this to the rest of the Divs
+
 
 <!--
 * Links you used today (websites, videos, etc)
