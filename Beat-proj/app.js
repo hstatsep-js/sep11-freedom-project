@@ -17,7 +17,10 @@ var sound1 = new Howl({
 
     containerOne.addEventListener("click",function(e){
         sound1.play();
-         div.classList.add("black");
+
+                    div.classList.add("black");
+
+
     })
 
 var sound2 = new Howl({
