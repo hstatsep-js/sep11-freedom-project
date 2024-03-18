@@ -24,6 +24,6 @@ height: 100vh;
     border-radius :10px;
 }
 
-.black {
-    color: black;
+.blue {
+    background: blue;
 }
