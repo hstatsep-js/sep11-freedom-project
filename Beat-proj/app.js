@@ -17,6 +17,7 @@ var sound1 = new Howl({
 
     containerOne.addEventListener("click",function(e){
         sound1.play();
+         div.classList.add("black");
     })
 
 var sound2 = new Howl({
@@ -52,7 +53,7 @@ var containertwo = document.getElementById("div2");
 
   containerfour.addEventListener("click", function (event) {
     sound4.play();
-    sound4.volume(0.2); 
+    sound4.volume(0.2);
   });
 
 
@@ -63,11 +64,11 @@ var containertwo = document.getElementById("div2");
 
   var containerfive = document.getElementById("div5");
 
-  
+
 
   containerfive.addEventListener("click", function (event) {
      // If playing, stop the sound
-     sound5.play();  
+     sound5.play();
   });
 
 
