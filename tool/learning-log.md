@@ -101,6 +101,11 @@ changed CSS colors for div
 * will do this to the rest of the Divs
 
 
+
+3/22/24
+
+* all divs will change color when clicked to indicate the activation of a sound
+* this was the extra part of the MVP that I wanted to do
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
