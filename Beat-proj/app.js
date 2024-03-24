@@ -31,6 +31,8 @@ var containertwo = document.getElementById("div2");
 
   containertwo.addEventListener("click",function(event){
     sound2.play();
+
+    containertwo.classList.toggle("whiteRed");
   });
 
 
@@ -43,6 +45,8 @@ var containertwo = document.getElementById("div2");
 
   containerthree.addEventListener("click",function(event){
     sound3.play();
+
+    containerthree.classList.toggle("whiteRed");
   });
 
 
@@ -57,6 +61,7 @@ var containertwo = document.getElementById("div2");
   containerfour.addEventListener("click", function (event) {
     sound4.play();
     sound4.volume(0.2);
+    containerfour.classList.toggle("whiteRed");
   });
 
 
@@ -72,6 +77,7 @@ var containertwo = document.getElementById("div2");
   containerfive.addEventListener("click", function (event) {
      // If playing, stop the sound
      sound5.play();
+     containerfive.classList.toggle("whiteRed");
   });
 
 
@@ -86,7 +92,7 @@ var containertwo = document.getElementById("div2");
   containerSix.addEventListener("click", function (event){
     sound6.play();
     sound6.volume(0.2);
-
+    containerSix.classList.toggle("whiteRed");
   });
 
 
