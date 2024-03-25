@@ -92,11 +92,7 @@ var containertwo = document.getElementById("div2");
   containerSix.addEventListener("click", function (event){
     sound6.play();
     sound6.volume(0.2);
-    if(onclick == true){
-
-     console.log("wowow");
-    }
-    //containerSix.classList.toggle("whiteRed");
+    containerSix.classList.toggle("whiteRed");
   });
 
 
