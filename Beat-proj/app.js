@@ -68,6 +68,10 @@ var containertwo = document.getElementById("div2");
 
   var sound5 = new Howl({
     src: ["sounds/amen-break.mp3"],
+    sprite: {
+      wowow: [1, 13.45],
+
+    }
   });
 
   var containerfive = document.getElementById("div5");
