@@ -106,6 +106,11 @@ changed CSS colors for div
 
 * all divs will change color when clicked to indicate the activation of a sound
 * this was the extra part of the MVP that I wanted to do
+
+
+3/25/2024
+* [web that makes sounds](https://sfxr.me/)
+* [favicon](https://www.w3schools.com/html/html_favicon.asp)
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
