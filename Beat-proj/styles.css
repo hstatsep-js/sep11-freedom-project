@@ -25,5 +25,5 @@ height: 100vh;
 }
 
 .whiteRed {
-    background: radial-gradient(white, red);
+    background: radial-gradient(white, red, green, orange);
 }
