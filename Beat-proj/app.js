@@ -94,7 +94,7 @@ var containertwo = document.getElementById("div2");
     sound6.volume(0.2);
     if(onclick){
 
-     containerSix.classList.toggle("whiteRed");
+     console.log("wowow");
     }
     //containerSix.classList.toggle("whiteRed");
   });
