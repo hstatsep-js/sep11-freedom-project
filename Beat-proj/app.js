@@ -92,7 +92,7 @@ var containertwo = document.getElementById("div2");
   containerSix.addEventListener("click", function (event){
     sound6.play();
     sound6.volume(0.2);
-    if(onclick){
+    if(onclick == true){
 
      console.log("wowow");
     }
