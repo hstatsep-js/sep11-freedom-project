@@ -24,6 +24,11 @@ height: 100vh;
     border-radius :10px;
 }
 
+img{
+    display:block;
+    margin:0 auto;
+}
+
 .whiteRed {
     background: radial-gradient(white, red, green, orange);
 }
