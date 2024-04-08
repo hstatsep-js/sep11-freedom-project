@@ -111,6 +111,15 @@ changed CSS colors for div
 3/25/2024
 * [web that makes sounds](https://sfxr.me/)
 * [favicon](https://www.w3schools.com/html/html_favicon.asp)
+
+
+
+4/7/2024
+
+* fixed visual bug on my grid. Where the last box was not showing up.
+
+> the issue was due to there being no closing tags in the previous html tag before my div 6.
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
