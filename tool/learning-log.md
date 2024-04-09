@@ -120,6 +120,12 @@ changed CSS colors for div
 
 > the issue was due to there being no closing tags in the previous html tag before my div 6.
 
+
+4/8/2024
+
+* fixed image sizes being too big
+
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
