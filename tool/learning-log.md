@@ -125,6 +125,12 @@ changed CSS colors for div
 
 * fixed image sizes being too big
 
+4/15/2024
+
+* testing using only one variable sounds, to hold all of my, sounds
+* it's worked for two of the containers
+* going to try at home
+
 
 <!--
 * Links you used today (websites, videos, etc)
