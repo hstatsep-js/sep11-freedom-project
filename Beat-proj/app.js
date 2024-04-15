@@ -5,32 +5,36 @@
 
 // new howl instance
 
+  var sounds = new Howl({
+    src: ["sounds/snare-drum.mp3"],
+    src: ["sounds/arcade-retro.wav"],
+
+  });
 
 
+// var sound1 = new Howl({
+//   src: ["sounds/snare-drum.mp3"]
 
-var sound1 = new Howl({
-  src: ["sounds/snare-drum.mp3"]
-
-});
+// });
 
     var containerOne = document.getElementById("div1");
 
-    containerOne.addEventListener("click",function(e){
-        sound1.play();
-
-                    containerOne.classList.toggle("whiteRed");
+    containerOne.addEventListener("click",function(event){
+        sounds.play();
+          containerOne.classList.toggle("whiteRed");
 
 
     })
 
-var sound2 = new Howl({
-  src: ["sounds/arcade-retro.wav"]
-});
+// var sound2 = new Howl({
+//   src: ["sounds/arcade-retro.wav"]
+// });
 
 var containertwo = document.getElementById("div2");
 
   containertwo.addEventListener("click",function(event){
-    sound2.play();
+    sounds.play();
+    sounds.volume(0.2);
 
     containertwo.classList.toggle("whiteRed");
   });
@@ -45,6 +49,7 @@ var containertwo = document.getElementById("div2");
 
   containerthree.addEventListener("click",function(event){
     sound3.play();
+    sound3.volume(0.2);
 
     containerthree.classList.toggle("whiteRed");
   });
@@ -77,6 +82,7 @@ var containertwo = document.getElementById("div2");
   containerfive.addEventListener("click", function (event) {
      // If playing, stop the sound
      sound5.play();
+     sound5.volume(0.2);
      containerfive.classList.toggle("whiteRed");
   });
 
