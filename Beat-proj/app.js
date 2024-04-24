@@ -5,36 +5,36 @@
 
 // new howl instance
 
-  var sounds = new Howl({
-    src: ["sounds/snare-drum.mp3"],
-    src: ["sounds/arcade-retro.wav"],
+  // var sounds = new Howl({
+  //   src: ["sounds/snare-drum.mp3"],
+  //   // src: ["sounds/arcade-retro.wav"],
 
-  });
+  // });
 
 
-// var sound1 = new Howl({
-//   src: ["sounds/snare-drum.mp3"]
+var sound1 = new Howl({
+  src: ["sounds/snare-drum.mp3"]
 
-// });
+});
 
     var containerOne = document.getElementById("div1");
 
     containerOne.addEventListener("click",function(event){
-        sounds.play();
+        sound1.play();
           containerOne.classList.toggle("whiteRed");
 
 
     })
 
-// var sound2 = new Howl({
-//   src: ["sounds/arcade-retro.wav"]
-// });
+var sound2 = new Howl({
+  src: ["sounds/arcade-retro.wav"]
+});
 
 var containertwo = document.getElementById("div2");
 
   containertwo.addEventListener("click",function(event){
-    sounds.play();
-    sounds.volume(0.2);
+    sound2.play();
+    sound2.volume(0.2);
 
     containertwo.classList.toggle("whiteRed");
   });
