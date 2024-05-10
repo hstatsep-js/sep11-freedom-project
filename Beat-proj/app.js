@@ -81,7 +81,13 @@ var containertwo = document.getElementById("div2");
 
   containerfive.addEventListener("click", function (event) {
      // If playing, stop the sound
-     sound5.play();
+     if(containerfive == "click"){
+       sound5.play();
+     } else if(containerfive == "click"){
+      sound5.stop();
+     }
+    //  sound5.play();
+    //  sound5.stop();
      sound5.volume(0.2);
      containerfive.classList.toggle("whiteRed");
   });
