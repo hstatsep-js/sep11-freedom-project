@@ -18,6 +18,26 @@ Things I can improve on . . .
 
 my notes for the elevator pitch
 
+```
+Hook:
+Do you like music? Do you like pressing buttons? Then I think you will like this.
+
+Product:
+
+I'm going to have a permanent link that I will click on to show the user how the beatkit works, and might even let them use it.
+Will put up screenshots on the slides
+
+
+Process:
+Will show the other small things I did before I started on the beatKit
+Will show the difficulty I had with getting the sounds to load
+
+Conclusion:
+
+Javascript is fun when you have an end goal in mind
+Work on things that are related to your interests
+Preserve and think on your problems.
+```
 
 
 [Previous](entry05.md) | [Next](entry07.md)
