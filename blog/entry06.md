@@ -39,7 +39,9 @@ Work on things that are related to your interests
 Preserve and think on your problems.
 ```
 
-EDP
+## EDP:
+
+I have completed all of the steps in the EDP, the eighth and final step being 
 
 [Previous](entry05.md) | [Next](entry07.md)
 
