@@ -39,9 +39,19 @@ Work on things that are related to your interests
 Preserve and think on your problems.
 ```
 
+* [link-to-slides](https://docs.google.com/presentation/d/1yHo2iNFqglOyMtos_2NfySCTtuh9JD0_zPPQPlb8DCE/edit#slide=id.p)
+
+
 ## EDP:
 
-I have completed all of the steps in the EDP, the eighth and final step being 
+I have completed all of the steps in the EDP, the eighth and final step being communicating the results, which I did via the in-class presentation and the expo.
+
+## Skills:
+The two skills I had to utilize in to use to do these presentations are
+* Communication:
+ I had to figure out a way to communicate my project and the creation of that project to people who don't know anything about it.
+ * Organization:
+ I had to organize my files because I couldn't get a link to my project preview to work, so I had to get the help of my brother to help me fix my file pathways. I also had to merge my repository and the main branch, also resolving merge conflicts.
 
 [Previous](entry05.md) | [Next](entry07.md)
 
