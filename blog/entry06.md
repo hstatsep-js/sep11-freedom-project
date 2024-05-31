@@ -53,6 +53,10 @@ The two skills I had to utilize in to use to do these presentations are
  * Organization:
  I had to organize my files because I couldn't get a link to my project preview to work, so I had to get the help of my brother to help me fix my file pathways. I also had to merge my repository and the main branch, also resolving merge conflicts.
 
+
+## important takeaways from expo presentation:
+* 
+
 [Previous](entry05.md) | [Next](entry07.md)
 
 [Home](../README.md)
