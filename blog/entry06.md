@@ -60,7 +60,10 @@ after the in class presentation, we had to do an expo to present our projects to
 Things I think I did well:
 * I was able to speak to the judges on the spot
 * I was less stressed doing the expo than the in-class presentation.
-* 
+
+Things I want to improve upon next year:
+* I want to be able to give a stronger elevator pitch, with more info on my project, I feel that I didn't explain the process of my project enough.
+* I want to be able to speak louder and more clearly, it was difficult to talk though because it was very loud in the expo.
 
 [Previous](entry05.md) | [Next](entry07.md)
 
