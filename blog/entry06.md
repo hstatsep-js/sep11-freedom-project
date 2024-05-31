@@ -55,6 +55,11 @@ The two skills I had to utilize in to use to do these presentations are
 
 
 ## important takeaways from expo presentation:
+after the in class presentation, we had to do an expo to present our projects to students outside of the sep program and three judges.
+
+Things I think I did well:
+* I was able to speak to the judges on the spot
+* I was less stressed doing the expo than the in-class presentation.
 * 
 
 [Previous](entry05.md) | [Next](entry07.md)
