@@ -1,4 +1,4 @@
-## Context: sep11-freedom-project, tasked with choosing one or more tools to create a project due at the end of the yearm using JavaScript
+## Context: sep11-freedom-project, tasked with choosing one or more tools to create a project due at the end of the year using JavaScript
 
 ## Content: over the course of these blogs, I show a progression of my javascript abilties and milestones in the learning of my tool
 
@@ -17,4 +17,5 @@ a lot of people make a living of music, and I really like music so it would be c
 finding  beatkits/soundboards is difficult on the internet because most of the time, music and sound libraries are locked behind paywalls and subscriptions, and my project is free to use for those who want to.
 
  [link-to-slides](https://docs.google.com/presentation/d/1yHo2iNFqglOyMtos_2NfySCTtuh9JD0_zPPQPlb8DCE/edit#slide=id.p)
- [link-to-product]()
+
+ [link-to-product](https://jonathanl0610.github.io/sep11-freedom-project/)
