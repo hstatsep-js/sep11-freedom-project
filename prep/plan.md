@@ -53,8 +53,7 @@
 
 | Name | Glows | Grows |
 | -------- | ------- | ------- |
-| Alice  | Part A is very detailed! I didn't know most of those existed | Consider using Bootstrap cards for each Part B idea
-| Bob  | I like how your blue color scheme matches your topic: aviation (like the sky) | Have you thought about embedding your A-frame model?
+|  |  |  |
 |  |  |  |
 |  |  |  |
 |  |  |  |
