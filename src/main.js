@@ -21,7 +21,7 @@ startBtn.onclick = () => {
     scene("game", () => {
 
         const createBG = (x) => add([
-            sprite("background", { width: width(), height: height() }),
+            sprite("background.png", { width: width(), height: height() }),
             pos(x, 0),
             "bg"
         ]);
@@ -31,7 +31,7 @@ startBtn.onclick = () => {
 
 
         const player = add([
-            sprite("skater"),
+            sprite("skater.png"),
             pos(100, 200),
             area(),
             body(),

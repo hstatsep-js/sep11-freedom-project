@@ -45,9 +45,32 @@
 
 #### Plan to use k.addLevel with an array of strings to build a basic platformer map. This will allow me to immediately test out more advanced player movement, including using k.keyDown for continuous left/right movement and k.keyPress for a single-press jump [23:00].
 
+### 3/8/26:
+* #### Kaboom.js Tutorial:[https://www.youtube.com/watch?v=4OaHB0JbJDI&t=6415s]
+  ## Progress made
+  * Implemented horizontal movement (Left/Right) for a skateboarding mechanic.
+  * Established the core game loop and project structure within the engine.
+  A-ha Moments;
+* Realizing that skateboarding movement feels better with momentum (acceleration/friction) rather than instant stop-and-go movement.
 
-
-
+  # Challenges
+  * The "hollw canvas" Problem: Struggling to design and animate a character that looks natural while moving on a board.
+  * Art Pipeline: Not knowing whether to start with pixels, vectors, or 3D-to-2D sprites.
+  * Starting over with my code,i keep thinking like oh this is not good enough so i delet parts at a time and rework it but, i come to this same issue all the time.
+    ## What im going to try
+    * Use a prototype character
+      * Why? It lets me perfect the "feel" of the physics before I spend 10 hours drawing a character that might not fit the scale of my world.
+    ## Paper doll method
+    *Draw the Head, Torso, Legs, and Board as separate sprites.
+   * In GameMaker, I can "pin" pieces together. This makes it much easier to animate the legs bending during a crouch or the board flipping during a trick without redrawing the whole person.
+  ## Questions I still have
+  *Animation Depth: Do I want the character to stay on the board at all times, or do I need "off-board" walking animations?
+  ## What's next
+  * Looking forward to add more depth to my draft of my project, so i have concrete idea of the projection going forward, maybe retweak certain things.
+ 
+### 3/23
+* Currently i watch a video about setting up camera systems, with using Kaboom.
+    
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
