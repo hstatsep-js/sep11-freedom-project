@@ -58,6 +58,7 @@ startBtn.onclick = () => {
 
         onKeyPress("space", () => {
             if (player.isGrounded()) player.jump(850);
+            
         });
          const spawnObstacle = () => {
             add([
@@ -131,9 +132,15 @@ startBtn.onclick = () => {
             text("WIPEOUT!", { size: 48 }),
             pos(center().x, center().y - 20),
             anchor("center"),
+            color(255, 0, 0),
             fixed(),
         ]);
-        
+        add([
+            text(`Final Score: ${finalScore}`,{ size: 24}),
+            pos(center().x, center().y + 40),
+            anchor("center"),
+            fixed(),
+        ])
         onKeyPress("space", () => go("game"));
     });
 
