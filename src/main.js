@@ -47,7 +47,7 @@ startBtn.onclick = () => {
                 pos(x, height() - 40),
                 area(),
                 body({ isStatic: true }),
-                color(50, 50, 50),
+                color(0, 0, 0),
                 "floor"
             ]);
             platformX += width();
