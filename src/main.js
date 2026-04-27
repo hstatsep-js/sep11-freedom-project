@@ -19,7 +19,7 @@ startBtn.onclick = () => {
     setGravity(1600);
 
     scene("game", () => {
-
+       let score= 0;
         const createBG = (x) => add([
             sprite("background", { width: width(), height: height() }),
             pos(x, 0),
@@ -59,7 +59,34 @@ startBtn.onclick = () => {
         onKeyPress("space", () => {
             if (player.isGrounded()) player.jump(850);
         });
+         const spawnObstacle = () => {
+            add([
+                rect(40, rand(40, 80)),
+                area(),
+                outline(4),
+                pos(player.pos.x + width(), height() - 40),
+                anchor("botleft"),
+                color(128, 0, 128),
+                "obstacle",
+            ]);
+            wait(rand(1, 2.5), spawnObstacle);
+        };
 
+        spawnObstacle();
+
+
+        const scoreLabel = add([
+          text( score, {size: 24}),
+            pos(24, 24),
+            fixed(),
+        ]);
+
+
+        onKeyPress("space", () => {
+            if (player.isGrounded()) {
+                player.jump(850);
+            }
+        });
 
         player.onUpdate(() => {
             player.move(300, 0);
@@ -75,11 +102,27 @@ startBtn.onclick = () => {
                 spawnFloor(platformX);
             }
 
-            if (player.pos.y > 600) go("lose");
+            if (player.pos.y > 600) {
+              go("lose", score);
+            }
+            score += 1;
+            scoreLabel.text = `Score: ${Math.floor(score / 10)}`;
         });
+        player.onCollide("obstacle", () => {
+            shake();
+            go("lose", Math.floor(score / 10));
     });
 
-    scene("lose", () => {
+        });
+
+
+      onUpdate("obstacle", (obj) => {
+    if (obj.pos.x < player.pos.x - 600) {
+        destroy(obj);
+    }
+});
+
+    scene("lose", (finalScore) => {
         add([
             text("WIPEOUT!", { size: 48 }),
             pos(center()),
@@ -91,3 +134,4 @@ startBtn.onclick = () => {
 
     go("game");
 };
+
