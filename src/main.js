@@ -15,6 +15,7 @@ startBtn.onclick = () => {
 
     loadSprite("skater", "assets/sprites/skater.png");
     loadSprite("background", "assets/sprites/background.png");
+    loadSound("audio","assets/audio.mp3")
 
     setGravity(1600);
 
@@ -58,7 +59,11 @@ startBtn.onclick = () => {
 
         onKeyPress("space", () => {
             if (player.isGrounded()) player.jump(850);
-            
+            play("audio", {
+                volume: 0.8,
+            detune: rand(-100, 100),
+            });
+
         });
          const spawnObstacle = () => {
             add([
