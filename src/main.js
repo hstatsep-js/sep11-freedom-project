@@ -112,6 +112,10 @@ startBtn.onclick = () => {
             shake();
             go("lose", Math.floor(score / 10));
     });
+    player.onCollide("obstacle", () => {
+    shake();
+    go("lose", Math.floor(score / 10));
+});
 
         });
 
@@ -125,10 +129,11 @@ startBtn.onclick = () => {
     scene("lose", (finalScore) => {
         add([
             text("WIPEOUT!", { size: 48 }),
-            pos(center()),
+            pos(center().x, center().y - 20),
             anchor("center"),
             fixed(),
         ]);
+        
         onKeyPress("space", () => go("game"));
     });
 
