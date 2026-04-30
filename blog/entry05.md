@@ -26,6 +26,7 @@ Crash audio
     }
 });
 ```
+### To refine the visual presentation, I personally used Photoshop t color grade my assests,moving beyond standard sprites to achieve a chesive, professional aesthetic for my "skater" theme. My research was anchored in tutorials from Franks Laboratory and freeCodeCamp, which taught me how to handle complex physics like gravity and collision detection, as well as how to structure a project into distinct scenese for gameplay and game-over states. By organizing my code, it allowed me to have a clean, maintainable, and scalable project that demonstrates both technical proficiency and iterative design approach.
 [Previous](entry04.md) | [Next](entry06.md)
 
 [Home](../README.md)
