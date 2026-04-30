@@ -15,12 +15,19 @@ startBtn.onclick = () => {
 
     loadSprite("skater", "assets/sprites/skater.png");
     loadSprite("background", "assets/sprites/background.png");
+    loadSound("crash", "assets/jump.flac");
     loadSound("audio","assets/audio.mp3")
+    loadSound("bgmusic","assets/insertcoin.mp3")
 
     setGravity(1600);
 
     scene("game", () => {
-       let score= 0;
+        const music = play("bgmusic", {
+            volume: 0.5,
+            loop: true
+        });
+
+        let score= 0;
         const createBG = (x) => add([
             sprite("background", { width: width(), height: height() }),
             pos(x, 0),
@@ -97,7 +104,7 @@ startBtn.onclick = () => {
         player.onUpdate(() => {
             player.move(300, 0);
             camPos(player.pos.x + 200, 200);
-
+             music.stop();
             get("bg").forEach((bg) => {
                 if (bg.pos.x + width() < player.pos.x - 400) {
                     bg.pos.x += width() * 2;
@@ -115,13 +122,11 @@ startBtn.onclick = () => {
             scoreLabel.text = `Score: ${Math.floor(score / 10)}`;
         });
         player.onCollide("obstacle", () => {
-            shake();
+            music.stop();
+            shake(50);
+            play("crash", {volume:0.5});
             go("lose", Math.floor(score / 10));
     });
-    player.onCollide("obstacle", () => {
-    shake();
-    go("lose", Math.floor(score / 10));
-});
 
         });
 
