@@ -30,6 +30,26 @@ Crash audio
 
 ## Some issues that i  faced was that Kaboom couldn't intialize properly, because of the issues above ( and no guaranteed canvas), Kaboom failed to create a valid rendering context, leading to errors like: Cannot read properties of null(reading `drawingBufferWidth`). Whic caused me to not be able to view my code for a while, i used a myriad of websites to use my code and it showed me the same error everytime. Then one day, it magically appeared.
 
+## Currently im struggling to add bg music while playing the game, it wont load even though i believe that i did everything right.
+```js
+   scene("game", () => {
+        const music = play("bgmusic", {
+            volume: 0.5,
+            loop: true
+        });
+```
+### sources
+<a href="https://www.youtube.com/watch?v=iM1iSvloMlo&t=6284s">
+GameDev with JavaScript and Kaboom.js – Metroidvania Game Tutorial</a>
+<a href="https://youtu.be/4OaHB0JbJDI?si=x0UNdXRmkyWw8bKQ">
+Easy JavaScript Game Development with Kaboom.js (Mario, Zelda, and Space Invaders) - Full Course</a>
+<a href="https://youtu.be/4OaHB0JbJDI?si=x0UNdXRmkyWw8bKQ">
+Easy JavaScript Game Development with Kaboom.js (Mario, Zelda, and Space Invaders) - Full Course</a>
+<a href="https://youtu.be/Eg_zUEy_lDE?si=kUdZOhLq1SzuAuYl">Audio Visual Effects in JavaScript Games</a>
+<a href="https://opengameart.org/">vfx</a>
+
+
+
 
 [Previous](entry04.md) | [Next](entry06.md)
 
