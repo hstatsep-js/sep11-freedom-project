@@ -6,7 +6,7 @@ startBtn.onclick = () => {
     document.getElementById("ui").remove();
 
     kaboom({
-        background: [30, 30, 30],
+        background: [20, 20, 20],
         width: 800,
         height: 400,
         letterbox: true,
@@ -16,27 +16,26 @@ startBtn.onclick = () => {
     loadSprite("skater", "assets/sprites/skater.png");
     loadSprite("background", "assets/sprites/background.png");
     loadSound("crash", "assets/jump.flac");
-    loadSound("audio","assets/audio.mp3")
-    loadSound("bgmusic","assets/insertcoin.mp3")
+    loadSound("jump", "assets/audio.mp3");
+    loadSound("bgmusic", "assets/insertcoin.mp3");
 
-    setGravity(1600);
+    setGravity(2400);
 
     scene("game", () => {
-        const music = play("bgmusic", {
-            volume: 0.5,
-            loop: true
-        });
+        const music = play("bgmusic", { volume: 0.4, loop: true });
 
-        let score= 0;
+        let score = 0;
+        let SPEED = 400;
+
         const createBG = (x) => add([
             sprite("background", { width: width(), height: height() }),
             pos(x, 0),
+            z(-1),
             "bg"
         ]);
 
         createBG(0);
         createBG(width());
-
 
         const player = add([
             sprite("skater"),
@@ -44,17 +43,18 @@ startBtn.onclick = () => {
             area(),
             body(),
             scale(1.2),
+            anchor("center"),
         ]);
 
 
         let platformX = 0;
         const spawnFloor = (x) => {
             add([
-                rect(width(), 40),
+                rect(width() + 10, 40),
                 pos(x, height() - 40),
                 area(),
                 body({ isStatic: true }),
-                color(0, 0, 0),
+                color(40, 40, 40),
                 "floor"
             ]);
             platformX += width();
@@ -65,95 +65,99 @@ startBtn.onclick = () => {
 
 
         onKeyPress("space", () => {
-            if (player.isGrounded()) player.jump(850);
-            play("audio", {
-                volume: 0.8,
-            detune: rand(-100, 100),
-            });
+            if (player.isGrounded()) {
+                player.jump(900);
+                play("jump", { volume: 0.6, detune: rand(-200, 200) });
 
+
+                tween(player.scale.y, 0.8, 0.1, (val) => player.scale.y = val, easings.easeOutQuad);
+                wait(0.1, () => tween(player.scale.y, 1.2, 0.1, (val) => player.scale.y = val));
+            }
         });
-         const spawnObstacle = () => {
+
+
+        const spawnObstacle = () => {
             add([
-                rect(40, rand(40, 80)),
+                rect(30, rand(40, 70)),
                 area(),
                 outline(4),
                 pos(player.pos.x + width(), height() - 40),
                 anchor("botleft"),
-                color(128, 0, 128),
+                color(128,0, 128),
                 "obstacle",
             ]);
-            wait(rand(1, 2.5), spawnObstacle);
+            const waitTime = rand(0.8, 2) - (score / 5000);
+            wait(Math.max(waitTime, 0.5), spawnObstacle);
         };
 
         spawnObstacle();
 
 
         const scoreLabel = add([
-          text( score, {size: 24}),
+            text("Score: 0", { size: 24, font: "monospace" }),
             pos(24, 24),
             fixed(),
         ]);
 
 
-        onKeyPress("space", () => {
-            if (player.isGrounded()) {
-                player.jump(850);
-            }
-        });
-
         player.onUpdate(() => {
-            player.move(300, 0);
+            player.move(SPEED, 0);
+            SPEED += 0.1;
             camPos(player.pos.x + 200, 200);
-             music.stop();
+
+
+            if (player.pos.x + width() > platformX) {
+                spawnFloor(platformX);
+            }
+
             get("bg").forEach((bg) => {
                 if (bg.pos.x + width() < player.pos.x - 400) {
                     bg.pos.x += width() * 2;
                 }
             });
 
-            if (player.pos.x + width() > platformX) {
-                spawnFloor(platformX);
+
+            if (player.pos.y > 500) {
+                music.stop();
+                go("lose", Math.floor(score / 10));
             }
 
-            if (player.pos.y > 600) {
-              go("lose", score);
-            }
             score += 1;
             scoreLabel.text = `Score: ${Math.floor(score / 10)}`;
         });
-        player.onCollide("obstacle", () => {
-            music.stop();
-            shake(50);
-            play("crash", {volume:0.5});
-            go("lose", Math.floor(score / 10));
-    });
 
+        onUpdate("obstacle", (obj) => {
+            if (obj.pos.x < player.pos.x - 200) {
+                destroy(obj);
+            }
         });
 
-
-      onUpdate("obstacle", (obj) => {
-    if (obj.pos.x < player.pos.x - 600) {
-        destroy(obj);
-    }
-});
+        player.onCollide("obstacle", () => {
+            music.stop();
+            shake(20);
+            play("crash", { volume: 0.5 });
+            go("lose", Math.floor(score / 10));
+        });
+    });
 
     scene("lose", (finalScore) => {
         add([
-            text("WIPEOUT!", { size: 48 }),
-            pos(center().x, center().y - 20),
+            text("WIPEOUT!", { size: 64 }),
+            pos(center().x, center().y - 40),
             anchor("center"),
             color(255, 0, 0),
             fixed(),
         ]);
+
         add([
-            text(`Final Score: ${finalScore}`,{ size: 24}),
-            pos(center().x, center().y + 40),
+            text(`FINAL SCORE: ${finalScore}\n\n[ SPACE ] TO RESTART`, { size: 24, align: "center" }),
+            pos(center().x, center().y + 60),
             anchor("center"),
             fixed(),
-        ])
+        ]);
+
         onKeyPress("space", () => go("game"));
     });
 
     go("game");
 };
-
