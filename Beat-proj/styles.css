@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #000000;
+}
+
+.kit{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+height: 100vh;
+}
+
+.pad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex: 1 0 calc(33.333% - 20px);
+    background: conic-gradient(#D9D3A9, #80799C, #B3AADA, #847F5A, #2F255E);
+    border-radius :10px;
+}
+
+img{
+    size: 5px;
+}
+
+.whiteRed {
+    background: radial-gradient(white, red, green, orange);
+}
