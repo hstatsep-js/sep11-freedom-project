@@ -5,9 +5,21 @@
 
 ## Midnight Skater
 ### My inten of Midnight Skater was to replicate that feeling when you go to the arcade and play your favorite game. The game might not be diffcult at all, but the feeling of getting the high score fufill more than anything. I wanted to replicate the issues that skaters face while riding through New York City with the menagerie of obstacles that vary in size.
- <img src="code.jpeg" style="max-width: 100%; height: auto; margin-top: 20px;">
+```js
+ const spawnObstacle = () => {
+            add([
+                rect(30, rand(40, 70)),
+                area(),
+                outline(4),
+                pos(player.pos.x + width(), height() - 40),
+                anchor("botleft"),
+                color(128,0, 128),
+                "obstacle",
+```
+
 
  ### I made sure that the obstacles change sizes, in this case between the rand of 40 and 70, i didn't want to increase the sizes too much to the point that you cant avoid, so i decided that 70 was the maximum. As you pass each obstacle the speed increases, making it harder for you to avoid the obstacle due to how you're going.
+ 
 
 ## Takeaway
 ### When presenting my project to the class it felt easy. That may feel strange,but all the time that i spent presenting to the class about all the mini projects we done across the year prepared me for this one. Even though i could work on eye contact. I felt that i did better with presenting to the class because i truly know what i'm talking about. I never prepared a script for my presentations and often extemporise the entire thing, but this time i created talking point such as the animation i created via After effects and the whole taking point about nostalgia and connect it back to my childhood. This process of creating Midnight Skater allowed me to combine my hobbies and my school work, which i found enjoyable.
