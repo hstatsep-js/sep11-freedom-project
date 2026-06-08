@@ -5,6 +5,9 @@
 
 ## Midnight Skater
 ### My inten of Midnight Skater was to replicate that feeling when you go to the arcade and play your favorite game. The game might not be diffcult at all, but the feeling of getting the high score fufill more than anything. I wanted to replicate the issues that skaters face while riding through New York City with the menagerie of obstacles that vary in size.
+ <img src="code.jpeg" style="max-width: 100%; height: auto; margin-top: 20px;">
+ ### I made sure that the obstacles change sizes, in this case between the rand of 40 and 70, i didn't want to increase the sizes too much to the point that you cant avoid, so i decided that 70 was the maximum. As you pass each obstacle the speed increases, making it harder for you to avoid the obstacle due to how you're going.
+
 
 [Previous](entry06.md) | [Next](entry08.md)
 
